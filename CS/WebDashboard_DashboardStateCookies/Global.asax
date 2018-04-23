@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="WebDashboard_DashboardStateCookies.Global_asax" Language="C#" %>
