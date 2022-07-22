@@ -16,7 +16,7 @@ The [DashboardControlOptions.onDashboardStateChanged](https://docs.devexpress.co
 
 ## Server
 
-In the [ASPxDashboard.SetInitialDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.ASPxDashboard.SetInitialDashboardState) event handler, the [HttpRequest.Cookies](https://docs.microsoft.com/en-us/dotnet/api/system.web.httprequest.cookies) property gets a collection of cookies sent by the client. The dashboard state is loaded from the cookies and applied to [e.InitialState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs.InitialState) property to set the initial state of the loaded dashboard.
+In the [ASPxDashboard.SetInitialDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.DashboardConfigurator.SetDashboardStateService(DevExpress.DashboardWeb.IDashboardStateService)?p=netframework) event handler, the [HttpRequest.Cookies](https://docs.microsoft.com/en-us/dotnet/api/system.web.httprequest.cookies) property gets a collection of cookies sent by the client. The dashboard state is loaded from the cookies and applied to [e.InitialState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs.InitialState) property to set the initial state of the loaded dashboard.
 
 ## Files to Look At:
 
@@ -30,4 +30,4 @@ In the [ASPxDashboard.SetInitialDashboardState](https://docs.devexpress.com/Das
 
 ## More Examples
 
-- [Dashboard for Web Forms - How to specify a default dashboard state in code](https://github.com/DevExpress-Examples/aspxdashboard-how-to-specify-a-default-dashboard-state-in-code-t513681)
+- [Dashboard for Web Forms - How to specify a default dashboard state in code](https://github.com/DevExpress-Examples/web-forms-dashboard-specify-default-dashboard-state-in-code)
