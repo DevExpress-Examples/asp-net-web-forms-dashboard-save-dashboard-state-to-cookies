@@ -1,14 +1,15 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" 
     Inherits="WebDashboard_DashboardStateCookies.Default" %>
 
-<%@ Register Assembly="DevExpress.Dashboard.v19.1.Web.WebForms, Version=19.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
+<%@ Register Assembly="DevExpress.Dashboard.v22.1.Web.WebForms, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
     Namespace="DevExpress.DashboardWeb" TagPrefix="dx" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Web Dashboard Application</title>
+    <script src="Script.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -16,14 +17,11 @@
         <dx:ASPxDashboard ID="ASPxDashboard1" runat="server" 
             WorkingMode="ViewerOnly" 
             ClientInstanceName="webDashboard"
-            IncludeDashboardIdToUrl="True"        
+            IncludeDashboardIdToUrl="true"
             DashboardStorageFolder="~/App_Data/Dashboards" 
-            Height="100%" Width="100%" OnSetInitialDashboardState="ASPxDashboard1_SetInitialDashboardState">
-            <ClientSideEvents DashboardStateChanged="
-                function(s, e) {
-	            var cookies = e.DashboardState;
-	            ASPxClientUtils.SetCookie('ASPxDashboardState', cookies);
-            }"></ClientSideEvents>
+            Height="100%" Width="100%" 
+            OnSetInitialDashboardState="ASPxDashboard1_SetInitialDashboardState">
+            <ClientSideEvents BeforeRender="onBeforeRender"></ClientSideEvents>
         </dx:ASPxDashboard>
     </div>
     </form>

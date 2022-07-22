@@ -9,11 +9,14 @@ namespace WebDashboard_DashboardStateCookies {
         }
 
         protected void ASPxDashboard1_SetInitialDashboardState(object sender, SetInitialDashboardStateEventArgs e) {
-            HttpCookie cookie = Request.Cookies["ASPxDashboardState"];
+            // Requests the "dashboardState" cookie:
+            HttpCookie cookie = Request.Cookies["dashboardState"];
             if (cookie != null) {
                 DashboardState dashboardState = new DashboardState();
+                // Initializes a DevExpress.DashboardCommon.DashboardState object from the JSON state:
                 dashboardState.LoadFromJson(HttpUtility.UrlDecode(cookie.Value));
                 if (e.DashboardId == "dashboard1")
+                    // Applies the initial dashboard state if it exists in cookies:
                     e.InitialState = dashboardState;
             }
         }
