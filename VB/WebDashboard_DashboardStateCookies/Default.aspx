@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="Default.aspx.vb" 
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Default.aspx.vb" 
     Inherits="WebDashboard_DashboardStateCookies.Default" %>
 
 <%@ Register Assembly="DevExpress.Dashboard.v17.1.Web, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
@@ -21,8 +21,8 @@
             Height="100%" Width="100%" OnSetInitialDashboardState="ASPxDashboard1_SetInitialDashboardState">
             <ClientSideEvents DashboardStateChanged="
                 function(s, e) {
-                var cookies = e.DashboardState;
-                ASPxClientUtils.SetCookie('ASPxDashboardState', cookies);
+	            var cookies = e.DashboardState;
+	            ASPxClientUtils.SetCookie('ASPxDashboardState', cookies);
             }"></ClientSideEvents>
         </dx:ASPxDashboard>
     </div>
