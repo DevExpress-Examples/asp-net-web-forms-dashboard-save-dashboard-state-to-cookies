@@ -6,7 +6,9 @@
 
 # Dashboard for Web Forms - How to Save a Dashboard State to Cookies
 
-The example shows how to save the current dashboard state (such as master filter or parameter values) to cookies on the client side and restore this state on the server side. 
+The example shows how to save the current dashboard state (such as master filter or parameter values) to cookies on the client side and restore this state on the server side.
+
+![](web-dashboard-cookies.png)
 
 ## Client
 
