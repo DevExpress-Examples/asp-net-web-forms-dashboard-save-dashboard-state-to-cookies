@@ -31,3 +31,5 @@ In the [ASPxDashboard.SetInitialDashboardState](https://docs.devexpress.com/Das
 ## More Examples
 
 - [Dashboard for Web Forms - How to specify a default dashboard state in code](https://github.com/DevExpress-Examples/web-forms-dashboard-specify-default-dashboard-state-in-code)
+- [Dashboard for ASP.NET Core - How to save a dashboard state to cookies](https://github.com/DevExpress-Examples/asp-net-core-dashboard-save-dashboard-state-to-cookies)
+- [Dashboard for MVC - How to save a dashboard state to cookies](https://github.com/DevExpress-Examples/mvc-dashboard-save-dashboard-state-to-cookies)
