@@ -1,7 +1,7 @@
 <%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Default.aspx.vb" 
     Inherits="WebDashboard_DashboardStateCookies.Default" %>
 
-<%@ Register Assembly="DevExpress.Dashboard.v22.1.Web.WebForms, Version=22.1.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
+<%@ Register Assembly="DevExpress.Dashboard.v22.1.Web.WebForms, Version=22.1.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" 
     Namespace="DevExpress.DashboardWeb" TagPrefix="dx" %>
 
 <!DOCTYPE html>
