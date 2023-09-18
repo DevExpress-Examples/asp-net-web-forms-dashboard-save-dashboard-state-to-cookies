@@ -18,7 +18,7 @@ The [DashboardControlOptions.onDashboardStateChanged](https://docs.devexpress.co
 
 In the [ASPxDashboard.SetInitialDashboardState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.DashboardConfigurator.SetDashboardStateService(DevExpress.DashboardWeb.IDashboardStateService)?p=netframework) event handler, the [HttpRequest.Cookies](https://docs.microsoft.com/en-us/dotnet/api/system.web.httprequest.cookies) property gets a collection of cookies sent by the client. The dashboard state is loaded from the cookies and applied to [e.InitialState](https://docs.devexpress.com/Dashboard/DevExpress.DashboardWeb.SetInitialDashboardStateEventArgs.InitialState) property to set the initial state of the loaded dashboard.
 
-## Files to Look At:
+## Files to Review
 
 * [Default.aspx](./CS/WebDashboard_DashboardStateCookies/Default.aspx) (VB: [Default.aspx](./VB/WebDashboard_DashboardStateCookies/Default.aspx))
 * [Script.js](./CS/WebDashboard_DashboardStateCookies/Script.js) (VB: [Script.js](./VB/WebDashboard_DashboardStateCookies/Script.js))
